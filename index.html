@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JoyCat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: "Archivo", sans-serif;
+            background-color: #e3f8ff;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .header {
+            background-color: #fff;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 20px 0;
+        }
+
+        .nav-link {
+            color: #000;
+            font-weight: bold;
+        }
+
+        .nav-link:hover {
+            color: #007bff;
+        }
+
+        .hero {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .hero img {
+            max-width: 100%;
+            border-radius: 15px;
+        }
+
+        .services .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .services .card img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .card-button {
+            background-color: #94c83d;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .card-button:hover {
+            background-color: #7da32d;
+        }
+
+        .opening-hours-contact-wrapper {
+            background-image: url('img/Opening Hours.png');
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 50px;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
+            margin-right: calc(-50vw + 50%);
+            box-sizing: border-box;
+        }
+
+
+        .opening-hours,
+        .contact {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            width: calc(100% - 60px);
+            box-sizing: border-box;
+        }
+
+
+        .opening-hours h5,
+        .contact h5,
+        .opening-hours p,
+        .contact p {
+            margin-bottom: 15px;
+        }
+
+        .opening-hours h5,
+        .contact h5 {
+            margin-top: 0;
+        }
+
+        .contact .card {
+            margin-bottom: 0;
+            background: none;
+            box-shadow: none;
+        }
+
+
+
+        .testimonials .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            background-color: #2C3E50;
+            color: #ffffff;
+            padding: 30px 0;
+        }
+
+        .footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .footer .logo img {
+            width: 100px;
+        }
+
+        .footer .footer-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer .footer-links li {
+            margin: 0 10px;
+        }
+
+        .footer .footer-links li a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer .footer-links li a:hover {
+            color: #007bff;
+        }
+
+        .footer .footer-contact p {
+            margin: 0;
+        }
+
+        .footer .footer-social a img {
+            width: 25px;
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+
+        .footer .footer-social a img:hover {
+            transform: scale(1.2);
+        }
+
+
+        .testimonials .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
+            text-align: left;
+
+        }
+
+        .testimonials .card-body {
+            flex: 1;
+            padding: 0;
+
+        }
+
+        .testimonials .card-title {
+            margin-top: 15px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="header d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <img src="img/logo 1.png" alt="Joy Cat Logo" width="100" height="40" class="me-2">
+            </a>
+            <nav>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="about.html" class="nav-link">Tentang Kami</a></li>
+                    <li class="nav-item"><a href="clinic.html" class="nav-link">Klinik</a></li>
+                    <li class="nav-item"><a href="daycare.html" class="nav-link">DayCare & Grooming</a></li>
+                    <li class="nav-item"><a href="adopt.html" class="nav-link">Adopsi</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container col-xxl-10 px-4 py-5">
+            <div class="row align-items-center g-5 py-5">
+                <div class="col-lg-6">
+                    <h4 class="mb-4">Professional, Loving and Reliable Cat Care When You Can’t be There</h4>
+                    <p class="lead fw-semibold">Di Joy Cat, kami berkomitmen untuk memberikan perawatan terbaik bagi
+                        kucing kesayangan Anda. Kami menawarkan berbagai layanan yang dirancang khusus untuk memastikan
+                        kesehatan dan kebahagiaan kucing Anda. Dari klinik kucing hingga daycare dan grooming, serta
+                        program adopsi, Joy Cat adalah pilihan tepat bagi para pemilik kucing yang peduli.</p>
+                    <img src="img/CatPaw.png" alt="">
+                </div>
+                <div class="col-lg-6 position-relative">
+                    <img src="img/right.png" class="d-block mx-lg-auto img-fluid main-cat" alt="Hero Image" width="700"
+                        height="500" loading="lazy">
+
+                </div>
+            </div>
+        </main>
+
+
+        <section class="container py-5">
+            <h2 class="pb-2 border-bottom text-center">Our Services</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 text-center services">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="img/Rectangle 3.png" class="card-img-top" alt="Service 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Klinik Kucing</h5>
+                            <p class="card-text">Tim dokter hewan kami yang berpengalaman siap memberikan perawatan
+                                medis terbaik untuk kucing Anda. Kami menyediakan layanan vaksinasi, pemeriksaan rutin,
+                                pengobatan penyakit, dan konsultasi kesehatan.</p>
+                            <button class="card-button">Cek Dokter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="img/Rectangle 1.png" class="card-img-top" alt="Service 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Daycare & Grooming</h5>
+                            <p class="card-text">Butuh tempat yang aman dan nyaman untuk menitipkan kucing Anda saat
+                                Anda sibuk? Daycare kami adalah solusinya. Selain itu, layanan grooming kami akan
+                                membuat kucing Anda tetap bersih dan cantik.</p>
+                            <button class="card-button">Lihat Paket</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="img/Rectangle 2.png" class="card-img-top" alt="Service 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Adopsi Kucing</h5>
+                            <p class="card-text">Bantu kami menemukan rumah baru yang penuh cinta untuk kucing-kucing
+                                yang membutuhkan. Lihat kucing-kucing yang siap diadopsi dan jadilah bagian dari cerita
+                                bahagia mereka.</p>
+                            <button class="card-button">Cari Kucing</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container py-5">
+            <div class="row">
+                <div class="col opening-hours-contact-wrapper">
+                    <div class="opening-hours">
+                        <h5>Opening Hours</h5>
+                        <p>Weekdays<br>08:00–17:00</p>
+                        <p>Weekend<br>07:00–18:00</p>
+                        <h5>Kontak Cepat</h5>
+                        <p>Whatsapp<br>0123-1234-5678</p>
+                    </div>
+                    <div class="contact">
+                        <h5>Alamat Kami</h5>
+                        <div class="card shadow-sm">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15860.663436893967!2d106.8679048!3d-6.3725769!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69edee0a2b7f05%3A0x95ab16f97f8f308a!2sMoreTHAN%20Veterinary%20Clinic!5e0!3m2!1sen!2sid!4v1717058694072!5m2!1sen!2sid"
+                                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <div class="card-body">
+                                <p>Jl. Radar Auri No.324, Cisalak Ps., Kec. Cimanggis, Kota Depok, Jawa Barat 16452</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="container py-5">
+            <h2 class="pb-2 border-bottom text-center">Testimonials</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 testimonials">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <p class="card-text">It was my second time there. I believe my cat, Dusty had a good time
+                                there. Had a major trimming and nail/teeth gaps. The fur is still smooth after 2 weeks.
+                                They took great care of Dusty knowing that she's pregnant. Recommended!</p>
+                            <h5 class="card-title">- Amelia Rose</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <p class="card-text">Clean and nice for the cats. Grooming package is good too. We chose a
+                                special package for our cat “Molly”. Today we sent 8 cats for boarding. Love JoyCat
+                                service!</p>
+                            <h5 class="card-title">- Niki Jasmine</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <p class="card-text">Sent Casper for grooming and chose to try aromatic salt bath. She
+                                enjoyed the session and seems calmer and approachable compared to before. The place is
+                                well kept and adhere to Covid 19 SOP. Really recommended!</p>
+                            <h5 class="card-title">- Hanna Isma</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container bg-color">
+                <div class="footer-content">
+                    <div class="logo">
+                        <img src="img/logo 1.png" alt="Joy Cat Logo">
+                    </div>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="services.html">Klinik</a></li>
+                        <li><a href="services.html">Daycare & Grooming</a></li>
+                        <li><a href="adopt.html">Adopsi</a></li>
+                    </ul>
+                    <div class="footer-contact">
+                        <p>0812-3456-78910</p>
+                        <p>admin@joycat.com</p>
+                        <p>Jl. Radar Auri No.324, Cisalak Ps., Kec. Cimanggis, Kota Depok, Jawa Barat 16452</p>
+                    </div>
+                    <ul class="list-none flex gap-4 p-0 m-0">
+                        <li class="mb-2"><a href="#"><img src="img/YT.svg" alt="social"></a></li>
+                        <li class="mb-2"><a href="#"><img src="img/TIKTOK.svg" alt="social"></a></li>
+                        <li class="mb-2"><a href="#"><img src="img/IG.svg" alt="social"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
