@@ -9,6 +9,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #e7f0f4;
+            /* Match background color */
         }
 
         .header {
@@ -118,7 +120,8 @@
         }
 
         .adoption {
-            background-color: #f2f9f4;
+            background-color: #e7f0f4;
+            /* Match background color */
         }
 
         .adoption h2 {
@@ -131,12 +134,17 @@
         }
 
         .cat-card {
-            border-radius: 10px;
+            border-radius: 15px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             overflow: hidden;
+            background-color: white;
+            margin-bottom: 20px;
+            text-align: left;
+            /* Ensure text is aligned to the left */
         }
 
         .cat-card img {
+            width: 100%;
             border-bottom: 1px solid #ccc;
         }
 
@@ -145,8 +153,39 @@
         }
 
         .cat-card .card-title {
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .cat-card .cat-info {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .cat-card .cat-info li {
+            margin-bottom: 5px;
+        }
+
+        .cat-card .cat-info li span {
+            font-weight: bold;
+        }
+
+        .cat-card .adopt-btn {
+            display: block;
+            text-align: center;
+            padding: 10px 0;
+            background-color: #8BC34A;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+
+        .cat-card .adopt-btn:hover {
+            background-color: #7CB342;
         }
 
         .contact {
@@ -202,141 +241,143 @@
                 <h2 class="mb-4">Cat Adoption</h2>
                 <p class="mb-5">Berikut adalah beberapa kucing yang saat ini siap untuk diadopsi. Klik pada gambar untuk
                     melihat informasi lebih detail tentang masing-masing kucing.</p>
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <img src="img/bella.png" class="card-img-top" alt="Bella">
+                <div class="row justify-content-right">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="cat-card">
+                            <img src="img/bella.png" alt="Bella">
                             <div class="card-body">
                                 <h5 class="card-title">Bella</h5>
-                                <ul class="list-unstyled">
-                                    <li>Umur: 3 tahun</li>
-                                    <li>Kelamin: Betina</li>
-                                    <li>Jenis: Persia</li>
-                                    <li>Bobot: 5.5kg</li>
-                                    <li>Sifat: Ramah, pendiam, senang rebahan</li>
+                                <ul class="cat-info">
+                                    <li><span>Umur:</span> 3 tahun</li>
+                                    <li><span>Kelamin:</span> Betina</li>
+                                    <li><span>Jenis:</span> Persia</li>
+                                    <li><span>Bobot:</span> 5.5kg</li>
+                                    <li><span>Sifat:</span> Ramah, pendiam, senang rebahan</li>
                                 </ul>
-                                <a href="#" class="btn btn-success w-100">Adopsi</a>
+                                <a href="#" class="adopt-btn"><img src="img/whatsapp.png" alt="WhatsApp"
+                                        style="width: 20px; margin-right: 5px;"> Adopsi</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <img src="img/leo.png" class="card-img-top" alt="Leo">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="cat-card">
+                            <img src="img/leo.png" alt="Leo">
                             <div class="card-body">
                                 <h5 class="card-title">Leo</h5>
-                                <ul class="list-unstyled">
-                                    <li>Umur: 3 tahun</li>
-                                    <li>Kelamin: Jantan</li>
-                                    <li>Jenis: Anggora</li>
-                                    <li>Bobot: 5kg</li>
-                                    <li>Sifat: Aktif, energetik, jarang tidur, tidak suka ikan</li>
+                                <ul class="cat-info">
+                                    <li><span>Umur:</span> 2 tahun</li>
+                                    <li><span>Kelamin:</span> Jantan</li>
+                                    <li><span>Jenis:</span> Anggora</li>
+                                    <li><span>Bobot:</span> 5kg</li>
+                                    <li><span>Sifat:</span> Aktif, energik, jarang tidur, tidak suka ikan</li>
                                 </ul>
-                                <a href="#" class="btn btn-success w-100">Adopsi</a>
+                                <a href="#" class="adopt-btn"><img src="img/whatsapp.png" alt="WhatsApp"
+                                        style="width: 20px; margin-right: 5px;"> Adopsi</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <img src="img/momo.png" class="card-img-top" alt="Momo">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="cat-card">
+                            <img src="img/momo.png" alt="Momo">
                             <div class="card-body">
                                 <h5 class="card-title">Momo</h5>
-                                <ul class="list-unstyled">
-                                    <li>Umur: 3.5 tahun</li>
-                                    <li>Kelamin: Jantan</li>
-                                    <li>Jenis: Domestic Short Hair</li>
-                                    <li>Bobot: 5kg</li>
-                                    <li>Sifat: Tenang, clingy, mudah dipanggil, tidak suka gelap</li>
+                                <ul class="cat-info">
+                                    <li><span>Umur:</span> 3.5 tahun</li>
+                                    <li><span>Kelamin:</span> Jantan</li>
+                                    <li><span>Jenis:</span> Domestic Short Hair</li>
+                                    <li><span>Bobot:</span> 5kg</li>
+                                    <li><span>Sifat:</span> Tenang, clingy, mudah dipanggil, tidak suka gelap</li>
                                 </ul>
-                                <a href="#" class="btn btn-success w-100">Adopsi</a>
+                                <a href="#" class="adopt-btn"><img src="img/whatsapp.png" alt="WhatsApp"
+                                        style="width: 20px; margin-right: 5px;"> Adopsi</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <img src="img/tom.png" class="card-img-top" alt="Tom">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="cat-card">
+                            <img src="img/tom.png" alt="Luna">
                             <div class="card-body">
                                 <h5 class="card-title">Tom</h5>
-                                <ul class="list-unstyled">
-                                    <li>Umur: 4 tahun</li>
-                                    <li>Kelamin: Jantan</li>
-                                    <li>Jenis: Maine Coon</li>
-                                    <li>Bobot: 6kg</li>
-                                    <li>Sifat: Magearan, suka ngumpet, penakut sama orang baru</li>
+                                <ul class="cat-info">
+                                    <li><span>Umur:</span> 4 tahun</li>
+                                    <li><span>Kelamin:</span> Jantan</li>
+                                    <li><span>Jenis:</span> Maine Coon</li>
+                                    <li><span>Bobot:</span> 6kg</li>
+                                    <li><span>Sifat:</span> Mageran, suka ngumpet, penakut sama orang baru</li>
                                 </ul>
-                                <a href="#" class="btn btn-success w-100">Adopsi</a>
+                                <a href="#" class="adopt-btn"><img src="img/whatsapp.png" alt="WhatsApp"
+                                        style="width: 20px; margin-right: 5px;"> Adopsi</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <img src="img/anabell.png" class="card-img-top" alt="Anabell">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="cat-card">
+                            <img src="img/anabell.png" alt="Oliver">
                             <div class="card-body">
                                 <h5 class="card-title">Anabell</h5>
-                                <ul class="list-unstyled">
-                                    <li>Umur: 2 tahun</li>
-                                    <li>Kelamin: Betina</li>
-                                    <li>Jenis: Domestic</li>
-                                    <li>Bobot: 4.5kg</li>
-                                    <li>Sifat: Tidak bisa diam, clingy</li>
+                                <ul class="cat-info">
+                                    <li><span>Umur:</span> 2 tahun</li>
+                                    <li><span>Kelamin:</span> Betina</li>
+                                    <li><span>Jenis:</span> Domestic</li>
+                                    <li><span>Bobot:</span> 4.5kg</li>
+                                    <li><span>Sifat:</span> Tidak bisa diam, clingy</li>
                                 </ul>
-                                <a href="#" class="btn btn-success w-100">Adopsi</a>
+                                <a href="#" class="adopt-btn"><img src="img/whatsapp.png" alt="WhatsApp"
+                                        style="width: 20px; margin-right: 5px;"> Adopsi</a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+
         </section>
-        <section class="contact bg-warning py-5">
+        <section class="contact py-5">
             <div class="container text-center">
-                <h3 class="mb-4">Tidak menemukan kucing yang tepat untuk Anda?</h3>
-                <p class="mb-4">Isi form di bawah ini, kami akan memberitahu Anda jika ada yang memiripkan kucing yang
-                    Anda inginkan.</p>
-                <form action="#" class="text-left mx-auto" style="max-width: 600px;">
+                <h3 class="mb-4">Kontak Kami</h3>
+                <p>Jika Anda tertarik untuk mengadopsi atau memiliki pertanyaan lebih lanjut, jangan ragu untuk
+                    menghubungi kami melalui formulir kontak di bawah ini atau melalui WhatsApp.</p>
+                <form action="#" method="post">
                     <div class="form-group">
-                        <label for="name">Nama</label>
+                        <label for="name">Nama:</label>
                         <input type="text" id="name" name="name" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
+                        <label for="email">Email:</label>
                         <input type="email" id="email" name="email" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label for="preference">Preferensi kucing yang diinginkan</label>
-                        <input type="text" id="preference" name="preference" class="form-control">
+                        <label for="message">Pesan:</label>
+                        <textarea id="message" name="message" rows="4" class="form-control"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-dark w-100">Submit</button>
+                    <button type="submit" class="btn btn-primary">Kirim</button>
                 </form>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="container bg-color">
+        <div class="container">
             <div class="footer-content">
                 <div class="logo">
-                    <img src="img/logo 1.png" alt="Joy Cat Logo">
+                    <img src="img/logo 2.png" alt="JoyCat Logo">
                 </div>
                 <ul class="footer-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">Tentang Kami</a></li>
-                    <li><a href="services.html">Klinik</a></li>
-                    <li><a href="services.html">Daycare & Grooming</a></li>
+                    <li><a href="clinic.html">Klinik</a></li>
+                    <li><a href="daycare.html">Daycare & Grooming</a></li>
                     <li><a href="adopt.html">Adopsi</a></li>
                 </ul>
                 <div class="footer-contact">
-                    <p>0812-3456-78910</p>
-                    <p>admin@joycat.com</p>
-                    <p>Jl. Radar Auri No.324, Cisalak Ps., Kec. Cimanggis, Kota Depok, Jawa Barat 16452</p>
+                    <p>Email: info@joycat.com</p>
+                    <p>Phone: +62 123 456 789</p>
+                    <p>Alamat: Jl. Kebahagiaan No. 42, Jakarta</p>
                 </div>
                 <div class="footer-social">
-                    <a href="#"><img src="img/tiktok.png" alt="TikTok"></a>
                     <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
