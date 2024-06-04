@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bg-sky-50">
+        <nav
+            class="bg-white bg-[url('images/paw-pattern-light.png')] shadow-md rounded-full px-5 fixed inset-x-5 top-5 z-10">
+            <div class="flex justify-between h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <img class="h-8 w-auto" src="images/logo-dark.svg" alt="JoyCat Logo">
+                </div>
+                <div class="hidden md:flex md:items-center md:space-x-4">
+                    <a href="/pinip/about/index.html" class="text-gray-700 hover:text-gray-900">Tentang Kami</a>
+                    <a href="#" class="text-gray-700 hover:text-gray-900">Klinik</a>
+                    <a href="#" class="text-gray-700 hover:text-gray-900">Daycare & Grooming</a>
+                    <a href="#" class="text-gray-700 hover:text-gray-900">Adopsi</a>
+                </div>
+                <div class="flex items-center md:hidden">
+                    <button class="text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900"
+                        id="menu-button">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="md:hidden" id="mobile-menu">
+                <div class="pt-2 pb-4 space-y-1">
+                    <a href="#"
+                        class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Tentang
+                        Kami</a>
+                    <a href="#"
+                        class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Klinik</a>
+                    <a href="#"
+                        class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Daycare
+                        & Grooming</a>
+                    <a href="#"
+                        class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Adopsi</a>
+                </div>
+            </div>
+        </nav>
+        <section class="hero">
+            <div class="heroLeft">
+                <h1 class="text-5xl h-201 font-bold  pb-6 w-600 text-sky-900 font-['barlow']">Professional, Loving and
+                    Reliable Cat Care When You Can't be There</h1>
+                <p class="w-400 h-150 text-sk-900 font['barlow']">Di Joy Cat, kami berkomitmen untuk memberikan
+                    perawatan terbaik bagi kucing kesayangan Anda. Kami menawarkan berbagai layanan yang dirancang
+                    khusus untuk memastikan kesehatan dan kebahagiaan kucing Anda. Dari klinik kucing hingga daycare dan
+                    grooming, serta program adopsi, Joy Cat adalah pilihan tepat bagi para pemilik kucing yang peduli.
+                </p>
+                <a href="#" class="heroBtn"></a>
+            </div>
+            <div class="heroRight">
+                <img class="oren-hero " src="img/right.png" alt="Hero Image">
+            </div>
+        </section>
+    </div>
+    <section class="why">
+        <h2 class=" font-['barlow'] text-sky-900 font-bold">Our service</h2>
+        <div class="cardContainer">
+            <div class="card">
+                <div>
+                    <img class="rounded-xl" src="img/Rectangle 3.png" alt="">
+                    <p class="nomor font-['barlow'] "></p>
+                    <h3 class="cardTitle font-['barlow'] text-sky-900">Klinik Kucing</h3>
+                    <p class="cardDescription GRAY font-['barlow'] text-sky-900">Tim dokter hewan kami yang
+                        berpengalaman siap memberikan perawatan medis terbaik untuk kucing Anda. Kami menyediakan
+                        layanan vaksinasi, pemeriksaan rutin, pengobatan penyakit, dan konsultasi kesehatan.</p>
+                </div>
+                <div class="mt-10">
+                    <a class="bg-green-500 px-60 justify-center py-5 rounded-full font-['barlow'] text-white btn-card "
+                        href="/pinip/clinic/index.html">Cek dokter</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <img class="rounded-xl" src="img/Rectangle 1.png" alt="">
+                    <h3 class="cardTitle font-['barlow'] text-sky-900">Daycare & Grooming</h3>
+                    <p class="cardDescription GRAY font-['barlow'] text-sky-900">Butuh tempat yang aman dan nyaman untuk
+                        menitipkan kucing Anda saat Anda sibuk? Daycare kami adalah solusinya. Selain itu, layanan
+                        grooming kami akan membuat kucing Anda tetap bersih dan cantik.</p>
+                </div>
+                <div class="mt-10">
+                    <a class="bg-green-500 px-60 justify-center py-5 rounded-full font-['barlow'] text-white btn-card "
+                        href="/pinip/clinic/index.html">Lihat paket</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <img class="rounded-xl" src="img/Rectangle 2.png" alt="">
+                    <h3 class="cardTitle font-['barlow'] text-sky-900">Adopsi Kucing</h3>
+                    <p class="cardDescription GRAY font-['barlow'] text-sky-900">Bantu kami menemukan rumah baru yang
+                        penuh cinta untuk kucing-kucing yang membutuhkan. Lihat kucing-kucing yang siap diadopsi dan
+                        jadilah bagian dari cerita bahagia mereka.</p>
+                </div>
+                <div class="mt-10">
+                    <a class="bg-green-500 px-60 justify-center py-5 rounded-full font-['barlow'] text-white btn-card "
+                        href="/pinip/clinic/index.html">Cari Kucing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map gap-4 flex-col lg:flex-row">
+        <div class="card mapCard">
+            <h1 class="mapCardText font-['barlow'] text-sky-900 font-bold">Opening hours</h1>
+            <div class="container">
+                <div class="info">
+
+                    <div>
+                        <p class=" info1 font-['barlow'] font-bold text-sky-900">Weekdays</p>
+                        <p class="pb-4 font-['barlow'] text-sky-900"> 08.00—17.00</p>
+                        <p class=" info1 font-['barlow'] font-bold text-sky-900">Weekends</p>
+                        <p class="pb-4 font-['barlow'] text-sky-900"> 07.00—19.00</p>
+                        <hr>
+                    </div>
+                    <div>
+                        <h1 class="mapCardText font-['barlow'] text-sky-900 font-bold">Kontak cepat</h1>
+                        <p class=" info1 font-['barlow'] font-bold text-sky-900">Whatsapp</p>
+                        <p class="pb-4 font-['barlow'] text-sky-900">0812-1234-5678</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="card mapCard">
+            <h1 class="mapCardText font-['barlow'] text-sky-900 font-bold">Alamat kami</h1>
+            <div class="container">
+                <div class="info">
+
+                    <div>
+                        <p class="GRAY describ">Jl. Radar Auri No.32d, Cisalak Ps., Kec. Cimanggis,</p>
+                        <p class="pb-4"> Kota Depok, Jawa Barat 16452</p>
+                        <hr>
+                    </div>
+
+                </div>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15860.663436893967!2d106.8679048!3d-6.3725769!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69edee0a2b7f05%3A0x95ab16f97f8f308a!2sMoreTHAN%20Veterinary%20Clinic!5e0!3m2!1sid!2sid!4v1717401538188!5m2!1sid!2sid"
+                height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <section class="custom-bg py-20">
+        <div class="flex flex-col mx-1 p-6 gap-5">
+            <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6">
+                <h2 class="text-5xl font-black text-center mb-8 font-['Barlow'] text-[#2E5070]">Testimonials</h2>
+                <div class="bg-white rounded-lg shadow-lg p-6 md:w-1/3">
+                    <div class="flex items-center mb-4">
+                        <img src="images/quote.png" alt="">
+                    </div>
+                    <p class="text-sky-900 mb-4 font-['barlow']">It was my second time there. I believe my cat, Dusty
+                        had a good time there. Had a major trimming and royal splash spa. The fur is still smooth after
+                        2 weeks. They took great care of Dusty knowing that she is pregnant. Recommended!</p>
+                    <p class="font-bold font-['barlow'] text-sky-900">⚫ Amelia Rose</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg top-0 p-6 w-full md:w-1/3">
+                    <div class="flex items-center mb-4">
+                        <img src="images/quote.png" alt="">
+                    </div>
+                    <p class="text-sky-900 mb-4 font-['barlow']">Clean and nice for the cats. Grooming package is good
+                        too. We chose a special package for our cat 😸, Molly. Today we sent 6 cats for boarding. Love
+                        JoyCat service!</p>
+                    <p class="font-bold font-['barlow'] text-sky-900">⚫ Niki Jasmine</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 w-full md:w-1/3">
+                    <div class="flex items-center mb-4">
+                        <img src="images/quote.png" alt="">
+                    </div>
+                    <p class="text-sky-900 mb-4 font-['barlow']">Sent Casper for grooming and chose to try aromatic salt
+                        bath. She enjoyed the session and seems calmer and approachable compared to before 😍. The place
+                        is well kept and adhere to Covid 19 SOP. Really recommended!</p>
+                    <p class="font-bold font-['barlow'] text-sky-900">⚫ Hanna Isma</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-sky-800 bg-[url('images/paw-pattern-dark.png')] text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex  gap-32">
+                <!-- Logo Section -->
+                <div class="flex flex-col items-center md:items-start">
+                    <img src="images/logo-light.svg" alt="JoyCat Logo" class="h-12 mb-4 logo-footer">
+                </div>
+                <!-- Main Links -->
+                <div>
+                    <h5 class="font-bold mb-2 font-['barlow'] text-green-200">Main Links</h5>
+                    <ul>
+                        <li class="mb-1  font-['barlow']"><a href="#" class="hover:underline">Home</a></li>
+                        <li class="mb-1 font-['barlow']"><a href="#" class="hover:underline">Klinik</a></li>
+                        <li class="mb-1 font-['barlow']"><a href="#" class="hover:underline">Daycare & Grooming</a></li>
+                        <li class="mb-1 font-['barlow']"><a href="#" class="hover:underline">Adopsi</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Section -->
+                <div>
+                    <h5 class="font-bold mb-2 font-['barlow'] text-green-200 ">Contact</h5>
+                    <p class="mb-1 font-['barlow']">0812-3456-78910</p>
+                    <p class="mb-1 font-['barlow']">admin@joycat.com</p>
+                    <p class="mb-1 font-['barlow']">Jl. Radar Auri No.32d, Cisalak</p>
+                    <p class="mb-1 font-['barlow']">Ps., Kec. Cimanggis, Kota</p>
+                    <p class="mb-1 font-['barlow']">Depok, Jawa Barat 16452</p>
+                </div>
+                <!-- Social Media Links -->
+                <div>
+                    <h5 class="font-bold mb-2 font-['barlow'] text-green-200 ">Follow us for updates</h5>
+                    <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-tiktok"></i><img
+                            src="images/medsos.svg" alt=""></a>
+                </div>
+
+            </div>
+            <hr>
+            <div class="mt-8 text-center text-white text-sm">
+                <p>2024 © • Asesmen Sumatif Akhir Tahun <b>Sekolah Developer Indonesia</b> • Dibuat oleh Farhan
+                    muhawally• All images are either free stocks or generated by AI • </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+
+</body>
+
+</html>
